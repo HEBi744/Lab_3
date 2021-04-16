@@ -38,3 +38,25 @@ data.then((value) => {
         el
     );
 })
+
+
+
+//pink
+
+let myButton =  document.getElementById("my_button");
+
+myButton.addEventListener("click", 
+    (event) => {
+        let radios = document.getElementsByName('answer');
+
+        for (let i = 0, length = radios.length; i < length; i++) {
+          if (radios[i].checked) {
+            // do whatever you want with the checked radio
+            alert(radios[i].value);
+        
+            // only one radio can be logically checked, don't check the rest
+            break;
+          }
+        }
+    }
+);

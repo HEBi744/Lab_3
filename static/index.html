@@ -7,23 +7,32 @@
     <title>TESTERRA</title>
 </head>
 <body>
-    <form action="input">
+    <form>
         <div class ="quesion"> 
-        <p><b>Как по вашему мнению расшифровывается аббревиатура "ОС"?</b></p>
+        <p><b>Расшифровка "ОС"?</b></p>
         </div>
-        <p><ui>
-        <input id="n1"  type="radio" name="answer" value="a1">Офицерский 
+        <p><ul>
+        <input id="n1"  type="radio" name="answer[1]" value="a1">Офицерский 
         состав<Br>
-        <input id="n2" type="radio" name="answer" value="a2">Операционная 
+        <input id="n2" type="radio" name="answer[1]" value="a2">Операционная 
         система<Br>
-        <input id="n3" type="radio" name="answer" value="a3">Большой 
+        <input id="n3" type="radio" name="answer[1]" value="a3">Большой 
         полосатый мух</p>
-        </ui>
+        </ul>
+
         <div class ="quesion"> <br><p><b>Ты робот?</b></p></div>
-        <p><input id="n1"  type="radio" name="answer" value="a1">Да<Br>
-        <input id="n1"  type="radio" name="answer" value="a2">Нет<Br>
-        <input id="n1"  type="radio" name="answer" value="a3">Частично</p> 
-        <p><input id="my_button" type="submit" value="Отправить"></p>
+        <p><ul><input id="n1"  type="radio" name="answer[2]" value="a1">Да<Br>
+        <input id="n1"  type="radio" name="answer[2]" value="a2">Нет<Br>
+        <input id="n1"  type="radio" name="answer[2]" value="a3">Частично</p> 
+        </ul>
+        
+        <div class ="quesion"> <br><p><b>Расшифрофка "ДНК"?</b></p></div>
+        <p><ul><input id="n1"  type="radio" name="answer[3]" value="a1">Дезоксирибонуклеиновая кислота<Br>
+        <input id="n1"  type="radio" name="answer[3]" value="a2">N-диэтилнатриеламид<Br>
+        <input id="n1"  type="radio" name="answer[3]" value="a3">Донор набитый кровью</p> 
+        </ul>
+
+        <p><input id="my_button" type="button" value="Отправить"></p>
       </form>
     <div id="app"></div>
     <script src="../src/index.js"></script>
